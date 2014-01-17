@@ -9,14 +9,9 @@
   (fn [this bundle]
     (on-ui
      (set-content-view! a
-      (make-ui main-layout) )) ))
+      (make-ui [:linear-layout {:orientation :vertical}
+                  [:edit-text {:hint "Event name2"}]
+                  [:edit-text {:hint "Event location"}]]) )) ))
                 
 
-(def main-layout [:linear-layout {:orientation :vertical}
-                  [:edit-text {:hint "Event name2"}]
-                  [:edit-text {:hint "Event location"}]])
-
-    (on-ui
-     (set-content-view! a
-      (make-ui main-layout) ))
 
