@@ -9,9 +9,11 @@
 
   :source-paths ["src/clojure" "src"]
   :java-source-paths ["src/java" "gen"]
-
+  :jvm-opts [ "-Xms4G" "-Xmx8G"]
   :dependencies [[org.clojure-android/clojure "1.5.1-jb" :use-resources true]
-                 [neko/neko "3.0.0"]]
+                 [neko/neko "3.0.0"]
+                 [com.rabbitmq/rabbitmq-client "1.3.0" :exclusions [[junit]]]
+                 ]
   :profiles {:dev {:dependencies [[android/tools.nrepl "0.2.0-bigstack"]
                                   [compliment "0.0.3"]]
                    :android {:aot :all-with-unused}}
