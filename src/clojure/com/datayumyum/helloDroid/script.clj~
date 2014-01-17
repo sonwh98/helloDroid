@@ -1,0 +1,2 @@
+(def main-layout [:linear-layout {:orientation :vertical}
+                  [:edit-text {:hint "Event name"}]])

@@ -1,0 +1,19 @@
+/Users/sonnyto/workspace/helloDroid/target/helloDroid.ap_ \
+ : /Users/sonnyto/workspace/helloDroid/res/anim/splash_rotation.xml \
+/Users/sonnyto/workspace/helloDroid/res/drawable/splash_background.xml \
+/Users/sonnyto/workspace/helloDroid/res/drawable-hdpi/ic_launcher.png \
+/Users/sonnyto/workspace/helloDroid/res/drawable-hdpi/splash_circle.png \
+/Users/sonnyto/workspace/helloDroid/res/drawable-hdpi/splash_droid.png \
+/Users/sonnyto/workspace/helloDroid/res/drawable-hdpi/splash_hands.png \
+/Users/sonnyto/workspace/helloDroid/res/drawable-ldpi/ic_launcher.png \
+/Users/sonnyto/workspace/helloDroid/res/drawable-mdpi/ic_launcher.png \
+/Users/sonnyto/workspace/helloDroid/res/layout/splashscreen.xml \
+/Users/sonnyto/workspace/helloDroid/res/values/strings.xml \
+/Users/sonnyto/workspace/helloDroid/target/res/drawable-hdpi/ic_launcher.png \
+/Users/sonnyto/workspace/helloDroid/target/res/drawable-hdpi/splash_circle.png \
+/Users/sonnyto/workspace/helloDroid/target/res/drawable-hdpi/splash_droid.png \
+/Users/sonnyto/workspace/helloDroid/target/res/drawable-hdpi/splash_hands.png \
+/Users/sonnyto/workspace/helloDroid/target/res/drawable-ldpi/ic_launcher.png \
+/Users/sonnyto/workspace/helloDroid/target/res/drawable-mdpi/ic_launcher.png \
+/Users/sonnyto/workspace/helloDroid/assets/data_readers.clj \
+/Users/sonnyto/workspace/helloDroid/AndroidManifest.xml \
