@@ -12,7 +12,7 @@
   :jvm-opts [ "-Xms4G" "-Xmx8G"]
   :dependencies [[org.clojure-android/clojure "1.5.1-jb" :use-resources true]
                  [neko/neko "3.0.0"]
-                 [com.rabbitmq/rabbitmq-client "1.3.0" :exclusions [[junit]]]
+                 [com.rabbitmq/amqp-client "3.2.2" :exclusions [[junit]]]
                  ]
   :profiles {:dev {:dependencies [[android/tools.nrepl "0.2.0-bigstack"]
                                   [compliment "0.0.3"]]
@@ -40,5 +40,5 @@
             ;; If previous option didn't work, uncomment this as well.
             ;; :force-dex-optimize true
 
-            :target-version "19"
+            :target-version "16"
             :aot-exclude-ns ["clojure.parallel" "clojure.core.reducers"]})
