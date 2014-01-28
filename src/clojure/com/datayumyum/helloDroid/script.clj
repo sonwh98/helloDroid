@@ -14,7 +14,7 @@
       (make-ui main-layout) ))
 
 (import '(com.rabbitmq.client ConnectionFactory Connection Channel MessageProperties QueueingConsumer))
-(defn sendQueue [msg]
+(defn send [msg]
   (do
     (def factory (ConnectionFactory.))
     (.setHost factory "obi.kaicode.com")
@@ -23,10 +23,12 @@
     (def queue "han.printer")
     (.queueDeclare channel queue true false false nil)
     (.basicPublish channel "" queue MessageProperties/PERSISTENT_TEXT_PLAIN (.getBytes msg))    
+    (.close channel)
+    (.close connection)
     )
 )
 
-(defn readQeue []
+(defn read []
     (def factory (ConnectionFactory.))
     (.setHost factory "obi.kaicode.com")
     (def connection (.newConnection factory))
@@ -37,5 +39,15 @@
     (.basicConsume channel queue true consumer)
     (def delivery (.nextDelivery consumer))
     (def message (String. (.getBody delivery)))
+    (.close channel)
+    (.close connection)
     (println message)
+    (render (eval (read-string message)))
 )
+
+(defn render [ui]
+  (on-ui
+   (set-content-view! a
+                      (make-ui ui) ) )
+)
+   
